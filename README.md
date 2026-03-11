@@ -1,0 +1,1 @@
+# Placa-de-um-carregador-de-celular
