@@ -11,7 +11,7 @@ A fonte foi projetada e simulada utilizando o Proteus Design Suite, incluindo:
 
 O circuito recebe uma tensão alternada (AC) proveniente de um transformador, realiza a retificação, passa por um processo de filtragem e, por fim, fornece uma tensão contínua estável de 12V (DC) na saída.
 
-====================================================================================================================================================================
+
 ## 2. Finalidade
 
 O objetivo deste projeto é demonstrar, de forma prática, o funcionamento de uma fonte linear regulada, muito utilizada em circuitos eletrônicos para fornecer tensão contínua estável.
@@ -23,13 +23,13 @@ As etapas principais do funcionamento são:
 * Regulação da tensão de saída
 * Indicação de funcionamento através de LED
 
-==================================================================================================================================================================
+
 ## 3. Diagrama do Circuito
 O esquemático apresenta todos os componentes eletrônicos utilizados e suas conexões, permitindo compreender o funcionamento completo da fonte.
 
 <img width="1286" height="657" alt="Captura de tela 2026-03-10 220451" src="https://github.com/user-attachments/assets/429caeea-ef3c-48c4-a3a4-539d13463367" />
 
-==================================================================================================================================================================
+
 # 4. Lista de Componentes
 
 | Componente | Função |
@@ -44,21 +44,20 @@ O esquemático apresenta todos os componentes eletrônicos utilizados e suas con
 | D1 | LED indicador |
 | J1 | Conector de saída |
 
-==================================================================================================================================================================
+
 ## 5. Etapas de Funcionamento
 
 Entrada de Energia
 
 A alimentação do circuito é feita através do conector J2, ligado ao secundário de um transformador que reduz a tensão da rede elétrica para um nível adequado (exemplo: 12V AC).
 
-==================================================================================================================================================================
+
 ## Processo de Retificação
 
 A tensão alternada proveniente do transformador é aplicada à ponte retificadora (BR1).
 
 Essa ponte é formada por quatro diodos que convertem a corrente alternada em corrente contínua pulsante.
 
-==================================================================================================================================================================
 ## Filtragem da Tensão
 
 Após a retificação, a tensão ainda apresenta pequenas variações chamadas de ripple.
@@ -68,7 +67,7 @@ Para suavizar essas oscilações são utilizados:
 * C1 (1000µF) – capacitor responsável pela filtragem principal
 * C2 (100nF) – capacitor que reduz ruídos de alta frequência
 
-==================================================================================================================================================================## Regulação da Tensão
+## Regulação da Tensão
 
 A tensão filtrada é aplicada ao regulador 7812, que garante uma saída fixa de 12V DC.
 
@@ -82,14 +81,12 @@ O regulador possui três terminais:
 
 O capacitor C3 (100nF) auxilia na estabilidade da saída.
 
-==================================================================================================================================================================
 ## Indicador de Funcionamento
 
 O LED (D1) indica quando a fonte está em operação.
 
 O resistor R1 (100Ω) limita a corrente que passa pelo LED, evitando danos ao componente.
 
-==================================================================================================================================================================
 ## Saída da Fonte
 
 A tensão regulada é disponibilizada no conector J1, onde temos:
@@ -99,7 +96,6 @@ A tensão regulada é disponibilizada no conector J1, onde temos:
 
 Essa saída pode alimentar diferentes circuitos eletrônicos.
 
-==================================================================================================================================================================
 ## 6. Projeto da Placa (PCB)
 
 A placa foi projetada com dimensões aproximadas de:
@@ -114,7 +110,6 @@ O layout foi organizado para:
 
 <img width="1135" height="750" alt="PCB Layout" src="https://github.com/user-attachments/assets/1f2c2e02-58e3-4191-b0a6-7da8590cd385" />
 
-==================================================================================================================================================================
 ## 7. Visualização 3D
 
 A visualização tridimensional da placa permite observar como os componentes ficarão posicionados após a montagem.
@@ -127,7 +122,6 @@ A visualização tridimensional da placa permite observar como os componentes fi
 
 <img width="1197" height="681" alt="3D visualizer parte de baixo" src="https://github.com/user-attachments/assets/d2b4ca7e-4149-4ae0-abb2-a948956141d0" />
 
-==================================================================================================================================================================
 ## 8. Sequência de Operação da Fonte
 
 O funcionamento completo ocorre da seguinte forma:
@@ -139,7 +133,6 @@ O funcionamento completo ocorre da seguinte forma:
 5. O LED indica funcionamento
 6. A tensão regulada é disponibilizada na saída
 
-==================================================================================================================================================================
 ## 9. Possíveis Aplicações
 
 Fontes reguladas de 12V podem ser utilizadas em diversos projetos eletrônicos, como:
@@ -149,8 +142,8 @@ Fontes reguladas de 12V podem ser utilizadas em diversos projetos eletrônicos, 
 * Protótipos de sistemas embarcados
 * Circuitos de sensores
 * Pequenos dispositivos eletrônicos
-
-==================================================================================================================================================================## 10. Ferramentas Utilizadas
+  
+## 10. Ferramentas Utilizadas
 
 O desenvolvimento do projeto foi realizado com o software:
 
@@ -162,13 +155,13 @@ Módulos utilizados:
 * ARES – desenvolvimento da PCB
 * 3D Viewer – visualização tridimensional da placa
 
-==================================================================================================================================================================## 11. Observação Técnica
+## 11. Observação Técnica
 
 Para que o regulador 7812 funcione corretamente, a tensão de entrada deve ser maior que a tensão de saída.
 
 Normalmente é necessário ter entre 14V e 15V na entrada para garantir uma saída estável de 12V DC.
 
-==================================================================================================================================================================## 12. Autor
+## 12. Autor
 
 Projeto desenvolvido para a disciplina de Sistemas Embarcados.
 
